@@ -1,3 +1,4 @@
-release: python manage.py migrate --log-file
+release: python manage.py makemigrations --no-input
+release: python manage.py migrate --no-input
 
-web: gunicorn rncontacts.wsgi
+web: gunicorn rncontacts.wsgi --log-file -
