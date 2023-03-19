@@ -1,7 +1,3 @@
-from operator import mod
-from os import O_WRONLY
-from pyexpat import model
-from tabnanny import verbose
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils.translation import gettext_lazy as _
